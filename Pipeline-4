@@ -4,7 +4,7 @@ pipeline {
         dockerfile {
             filename 'Dockerfile'
 	   // dir 'build'
-	    label 'cent7agent'
+	    label 'agentlinux'
 	   // args '-v /tmp:/tmp'
         }
     }
@@ -15,7 +15,7 @@ pipeline {
 			sh 'ls -l'
 			sh 'python -V'
 			sh 'pip install -r ./reqts.txt'
-		}	
+		}
             }
         }
     }
